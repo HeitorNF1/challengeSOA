@@ -26,8 +26,25 @@ Este projeto é uma API RESTful desenvolvida em **Spring Boot**, que oferece aut
 
 A autenticação é feita via token JWT. Ao fazer login com credenciais válidas, um token é gerado e deve ser usado nos headers das requisições protegidas.
 
-### 📥 Obter Token
+### 🔓 Consumindo apis sem validação
 
+Existem 2 versões de apis no projeto, a v1 no qual não possue nenhuma autentificação e a v2 que exige. a chamada da v1 pode ser feita normalmente, enquanto a do swagger deve utilizar de tokens
+
+### 📥 Obter Token
+1° passo deve gerar uma conta que te retornará suas credenciais com a senha encriptada
+```
+POST /auth/signup
+Content-Type: application/json
+
+{
+{
+  "login": "usuario",
+  "role": "ADMIN",
+  "senha": "123"
+}
+}
+```
+2° vai usar o mesmo login e a mesma senha para gerar um token onde deve inserir no swagger
 ```
 POST /auth/login
 Content-Type: application/json
