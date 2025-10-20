@@ -9,6 +9,7 @@
 
 Este projeto é uma API RESTful desenvolvida em **Spring Boot**, que oferece autenticação com **JWT**, endpoints protegidos, e documentação interativa com **Swagger UI**.
 
+## [Vídeo Explicativo](https://youtu.be/CEtaYUZiVuc?si=0dQGpzr4zU8EdgPw)<br><br>
 ## ✨ Tecnologias Utilizadas
 
 - Java 17+
